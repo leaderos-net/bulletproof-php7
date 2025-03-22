@@ -4,7 +4,7 @@
  * 
  * A single-class PHP library to upload images securely.
  * 
- * PHP support 8.1+
+ * PHP support 7.4+
  * 
  * @version     5.0.0
  * @author      https://twitter.com/_samayo
@@ -114,21 +114,21 @@ class Image implements \ArrayAccess
      * @param mixed $offset
      * @param mixed $value
      */
-    public function offsetSet($offset, $value) : void {}
+    public function offsetSet($offset, $value) {}
 
     /**
      * \ArrayAccess unused method
      * 
      * @param mixed $offset
      */
-    public function offsetExists($offset) : bool {}
+    public function offsetExists($offset) {}
 
     /**
      * \ArrayAccess unused method
      * 
      * @param mixed $offset
      */
-    public function offsetUnset($offset) : void {}
+    public function offsetUnset($offset) {}
 
     /**
      * \ArrayAccess - get array value from object
@@ -137,7 +137,7 @@ class Image implements \ArrayAccess
      *
      * @return string|bool
      */
-    public function offsetGet($offset) : mixed
+    public function offsetGet($offset)
     {
         /* return false if $image['key'] isn't found */
         if (!isset($this->_files[$offset])) {
