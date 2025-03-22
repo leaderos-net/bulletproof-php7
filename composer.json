@@ -1,5 +1,5 @@
 {
-    "name":"samayo/bulletproof",
+    "name":"leaderos-net/bulletproof-php7",
     "description":"A simple and secure PHP image uploader",
     "keywords":[
        "image",
@@ -12,10 +12,13 @@
     "authors":[
        {
           "name":"samayo"
+       },
+       {
+          "name":"leaderos"
        }
     ],
     "require":{
-       "php":">=8.1.0",
+       "php":">=7.4",
        "ext-exif":"*"
     },
     "require-dev":{
